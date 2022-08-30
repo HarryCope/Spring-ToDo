@@ -10,8 +10,8 @@ pipeline {
             steps {
                 sh '''
                 ssh -i ~/.ssh/id_rsa jenkins@13.40.31.150 << EOF
-                git clone https://github.com/HarryCope/Spring-ToDo.git
-                cd Spring-ToDo
+                git clone https://github.com/HarryCope/QA-Cinema-OMD.git
+                cd QA-Cinema-OMD
                 git checkout development
                 git pull
                 mvn clean install
